@@ -1,0 +1,165 @@
+/* 基本樣式 */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dfd4c8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: left;
+    padding-top: 70px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #800030;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section:not(.hidden) {
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #800030;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  button:hover {
+    background-color: #887565;
+    color: #ffffff;
+    transition: 0.4s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* 選項卡樣式 */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .option-card {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 16px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+  }
+  
+  .option-card.selected {
+    border-color: #800030;
+  }
+  
+  .option-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .option-label {
+    flex: 1;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  
+  /* 總額和選項明細樣式 */
+  .summary {
+    background-color: #f9f9f9;
+    padding:50px 200px 50px 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 0.8cm;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  
+  .total {
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .option-card.selected {
+    border-color: #800030;
+    border-style: outset;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #80002f47;
+    background-color:rgba(255, 255, 255, 0.5);
+  }
+
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+    font-size: 16px;
+  }
+  
+  .item-label {
+    text-align: left;
+  }
+  
+  .item-price {
+    text-align: right;
+    color: #444;
+    font-weight: bold;
+  }
+  .total {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
